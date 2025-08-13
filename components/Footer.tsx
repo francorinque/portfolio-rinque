@@ -30,14 +30,14 @@ export const Footer = () => {
           Developed by Franco Rinque.
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-4 gap-3">
           {socialMedia.map((info) => (
             <a
               href={info.link}
               target="_blank"
               rel="noreferrer"
               key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="w-10 h-10 cursor-pointer mt-6 md:mt-0 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
               <Image src={info.img} alt="icons" width={20} height={20} />
             </a>
