@@ -1,13 +1,13 @@
-import { projects } from "@/data";
-import { PinContainer } from "./ui/3d-pin";
-import { FaLocationArrow } from "react-icons/fa";
-import Image from "next/image";
+import { projects } from '@/data'
+import { PinContainer } from './ui/3d-pin'
+import { FaLocationArrow } from 'react-icons/fa'
+import Image from 'next/image'
 
 export const RecentProjects = () => {
   return (
     <div className="mt-40" id="projects">
       <h1 className="heading">
-        Una pequeña selección de{" "}
+        Una pequeña selección de{' '}
         <span className="text-purple">Proyectos recientes</span>
       </h1>
 
@@ -39,7 +39,7 @@ export const RecentProjects = () => {
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                   {title}
                 </h1>
-                <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+                <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-3">
                   {des}
                 </p>
 
@@ -48,7 +48,7 @@ export const RecentProjects = () => {
                     {iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        className="border border-white/[.2] rounded-full overflow-hidden bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${5 * index * 2}px)`,
                         }}
@@ -81,5 +81,5 @@ export const RecentProjects = () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
