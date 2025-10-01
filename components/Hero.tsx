@@ -1,8 +1,8 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow } from 'react-icons/fa6'
 
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { MagicButton } from "./ui/MagicButton";
+import { Spotlight } from './ui/Spotlight'
+import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import { MagicButton } from './ui/MagicButton'
 
 export const Hero = () => {
   return (
@@ -32,7 +32,7 @@ export const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hola! soy Franco Rinque, desarrollador web desde Argentina.
+            Hola! soy Franco Rinque, Desarrollador Web desde Argentina.
           </p>
 
           <a href="#about">
@@ -45,5 +45,5 @@ export const Hero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
